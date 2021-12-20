@@ -1,7 +1,8 @@
 let topTitleDiv = "<h4>Points Unknown | Tutorial 10 | Mapbox Storytelling</h4>";
 
 let titleDiv =
-  "<h1>The Geographical Distribution of Subway Usage Decrease Due to COVID-19</h1>";
+  "<h1>The Geographical Distribution of Subway Usage Decrease Due to COVID-19</h1>" +
+  '<img src="images/Chapter_3_Image.jpg" width="1000">';
 
 let bylineDiv = "<p>By Juan Francisco Saldarriaga and Michael Krisch</p>";
 
@@ -39,7 +40,7 @@ let divChapter4 =
   "<p class='imageCredit' style='max-width:600px; margin-left:auto; margin-right:auto'><a href='https://qri.cloud/nyc-transit-data/turnstile_daily_counts_2020'>NYC Subway Turnstile Counts - 2020 (Qri)</a></p>" +
   "<p style='max-width:600px; margin-left:auto; margin-right:auto'>As can be seen in the chart above, subway usage collapsed abruptly right after the first COVID-19 case was documented in the city. It was in fact the declaration of a state of emergency, on March 7, 2020, that precipitated this near total drop in subway ridership.</p>" +
   "<p style='max-width:600px; margin-left:auto; margin-right:auto'>After a few weeks of the declaration of state of emergency, subway usage in the city reached its lowest point, almost 90% less than the same time period the year before. Since then, the number of people that use the subway has remained drastically low. Even after the city began its re-opening scheme on June 8, 2020, subway usage was still more than 70% below 2019 levels.</p>" +
-  '<div style="max-width:600px; margin-left:auto; margin-right:auto"><iframe title="vimeo-player" src="https://player.vimeo.com/video/529512696" width="600" height="277.5" frameborder="0" allowfullscreen></iframe></div>' +
+  '<div style="max-width:600px; margin-left:auto; margin-right:auto"><iframe width="600" height="315" src="https://www.youtube.com/embed/Js4r19RO_Os?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>' +
   "<p style='max-width:600px; margin-left:auto; margin-right:auto'>This difference, however, varies across the city, with some parts of it seeing a much steeper decline and others witnessing a stronger recovery. Nevertheless, even a year after the pandemic first hit New York City, the number of daily subway commuters remains below 2019 levels.</p>" +
   "<p style='max-width:600px; margin-left:auto; margin-right:auto'>That being said, other transportation networks have fared differently. For example, after a similar decline right after the state of emergency was declared, Citibike has seen its number of users reach and even surpass 2019 levels. City buses, on the other hand, also remain underutilized compared to their usage pre-pandemic.</p>";
 
@@ -48,7 +49,6 @@ let divChapter5 =
   '<img src="images/Chapter_4_Image.jpg">' +
   '<p class="imageCredit"><a href="https://www.nytimes.com/2020/04/09/nyregion/coronavirus-queens-corona-jackson-heights-elmhurst.html">The New York Times</a></p>' +
   "<p>The South Bronx, perennially marred in social injustice, has also been hard hit during the current COVID-19 outbreak. The area's three main neighborhoods, Mott Haven, Melrose and Port Morris are mostly home to low-income families that have been forced to continue going to work, risking their health and that of their loved ones. Similarly to Jackson Heights in Queens, the areas subway stations have seen a smaller decrease in use than the rest of the city. Median household income in this area oscillates between $15,000 and $30,000.</p>";
-
 var config = {
   style: "mapbox://styles/fandilladp/ckxdi9e6qeyjl15luv88kx85q",
   accessToken:
@@ -110,8 +110,8 @@ var config = {
       chapterDiv: divChapter2,
       location: {
         center: { lon: 104.62852, lat: -5.53842 },
-        zoom: 9.90,
-        pitch: 0.00,
+        zoom: 9.9,
+        pitch: 0.0,
         bearing: -50.92,
         transitionDuration: 5000,
       },
@@ -163,6 +163,44 @@ var config = {
       ],
     },
     {
+      id: "weekdayTrips",
+      alignment: "full",
+      hidden: false,
+      title: "",
+      image: "",
+      description: "",
+      chapterDiv: divChapter4,
+      location: {
+        center: { lon: 104.79504, lat: -5.45454 },
+        zoom: 9.28,
+        pitch: 0.0,
+        bearing: -16.0,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [
+        {
+          layer: "desa-tanggamus-1-1jw5rx",
+          opacity: 1,
+        },
+        {
+          layer: "desa-tanggamus-1-1jw5rx",
+          opacity: 1,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: "desa-tanggamus-1-1jw5rx",
+          opacity: 1,
+        },
+        {
+          layer: "desa-tanggamus-1-1jw5rx",
+          opacity: 1,
+        },
+      ],
+    },
+    {
       id: "southBronx",
       alignment: "right",
       hidden: false,
@@ -171,13 +209,13 @@ var config = {
       description: "",
       chapterDiv: divChapter5,
       location: {
-        center: { lon: 104.79504, lat: -5.45454 },
-        zoom: 9.28,
-        pitch: 0.00,
-        bearing: -16.00
+        center: { lon: 120.23838, lat: -8.57611 },
+        zoom: 9.84,
+        pitch: 39.00,
+        bearing: -82.40
       },
       mapAnimation: "flyTo",
-      rotateAnimation: true,
+      rotateAnimation: false,
       callback: "",
       onChapterEnter: [
         {
