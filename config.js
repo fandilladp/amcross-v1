@@ -1,5 +1,5 @@
 let topTitleDiv =
-  "<div class='topnav'><div class='topnav-right'><a class='active' href='#home'>Home</a><a href='#news'>News</a><a href='#contact'>Contact</a><a href='#about'>About</a></div></div><div class='hero-image'><img class='image-header' src='./images/header.jpg'/><div class='hero-text'><h1>Palang Merah Indonesia supported by American Red Cross | Mid Project Report</h1></div></div>";
+  "<div class='hero-image'><img class='image-header' src='./images/header.jpg'/><div class='hero-text'><h1>Palang Merah Indonesia supported by American Red Cross | Mid Project Report</h1></div></div>";
 
 let titleDiv =
   "<h1>Fostering Disaster-Ready Comunities throught Sustainable and Inclusive Disaster Risk Reduction in Indonesia</h1>";
@@ -10,7 +10,7 @@ let descriptionDiv =
   "<p>Sejak Januari 2020, melanjutkan Program Pengurangan Risiko Bencana Berbasis Masyarakat atau Community based disaster risk reduction (CBDRR)</p>" +
   "<p>Palang Merah Indonesia (PMI) bersama Palang Merah Amerika terus membangun kapasitas masyarakat sasaran dalam mempersiapkan dan merespons bencana serta memperkuat kapasitas kelembagaan PMI dalam memberikan kebutuhan dasar melalui program Fostering Disaster-Ready Comunities throught Sustainable and Inclusive Disaster Risk Reduction (FDRCSI-DRR) atau program masyarakat siaga bencana melalui pengurangan risiko bencana berkelanjutan dan inklusif.</p>" +
   "<p>Project FDRCSI akan bekerja di dua provinsi, dengan melibatkan 12 komunitas. Tujuh di Kabupaten lampung Selatan Provinsi Lampung dan lima di Kabupaten Mangarai Barat provinsi Nusa Tenggara Timur.</p>" +
-  '<div style="max-width:2560px; margin-left:auto; margin-right:auto"><iframe title="vimeo-player" src="https://www.youtube.com/embed/ZVrzfEXFOrI?controls=0" width="2000" height="1080" frameborder="0" allowfullscreen></iframe></div>' +
+  '<div style="max-width:720px; margin-left:auto; margin-right:auto"><iframe title="vimeo-player" src="https://www.youtube.com/embed/ZVrzfEXFOrI?controls=0" width="720" height="400" frameborder="0" allowfullscreen></iframe></div>' +
   '<p style="text-align:center">Scroll to continue<br>▼</p>';
 
 let footerDiv =
