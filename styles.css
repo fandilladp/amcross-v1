@@ -334,7 +334,6 @@ a {
 
 .step2 {
   margin: 0 auto 2rem auto;
-  border: 2px solid #104E8B;
   display: flex;
   justify-content: center;
   align-items: start;      
@@ -345,12 +344,12 @@ a {
 }
 
 .text-block.is-active {
-  background-color: goldenrod;
+  background-color: #f1bd39;
   color: #3b3b3b;
 }
 
 .text-block {
-  background-color: salmon;
+  background-color: #4a87ab;
 }
 
 .step2 p {
