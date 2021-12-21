@@ -1,14 +1,14 @@
-let topTitleDiv = "<h4>Points Unknown | Tutorial 10 | Mapbox Storytelling</h4>";
+let topTitleDiv = "<h4>Palang Merah Indonesia supported by American Red Cross | Mid Project Report</h4>";
 
 let titleDiv =
-  "<h1>The Geographical Distribution of Subway Usage Decrease Due to COVID-19</h1>";
+  "<h1>Fostering Disaster-Ready Comunities throught Sustainable and Inclusive Disaster Risk Reduction in Indonesia</h1>";
 
-let bylineDiv = "<p>By Juan Francisco Saldarriaga and Michael Krisch</p>";
+let bylineDiv = "<h4>Visualized by Guerrilla Creative</h4>";
 
 let descriptionDiv =
-  '<p>This tutorial demonstrates how to use <a href="https://github.com/mapbox/storytelling">Mapbox Storytelling</a> with our previous web mapping example. Here we will use Mapbox storytelling template to first, give an overview of the decrease in subway usage around the city, and second, zoom into three different locations that exemplify the diversity of conditions around New York.</p>' +
-  '<p>We will use the <a href="https://pointsunknown.nyc/web%20mapping/mapbox/2020/03/25/10_WebmappingTurnstileData.html">previous web map displaying MTA turnstile data</a> as the basis for our story. In this process we will use Mapbox GL JS, as well as Intersection Observer and Scrollama as our main JavaScript libraries.</p>' +
-  "<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In harum natus eos cum rem iure aperiam omnis distinctio illo quis, sunt nesciunt sint impedit deleniti dolor saepe necessitatibus eligendi aut?</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In harum natus eos cum rem iure aperiam omnis distinctio illo quis, sunt nesciunt sint impedit deleniti dolor saepe necessitatibus eligendi aut?</p>" +
+  '<p>Sejak Januari 2020, melanjutkan Program Pengurangan Risiko Bencana Berbasis Masyarakat atau Community based disaster risk reduction (CBDRR)</p>' +
+  '<p>Palang Merah Indonesia (PMI) bersama Palang Merah Amerika terus membangun kapasitas masyarakat sasaran dalam mempersiapkan dan merespons bencana serta memperkuat kapasitas kelembagaan PMI dalam memberikan kebutuhan dasar melalui program Fostering Disaster-Ready Comunities throught Sustainable and Inclusive Disaster Risk Reduction (FDRCSI-DRR) atau program masyarakat siaga bencana melalui pengurangan risiko bencana berkelanjutan dan inklusif.</p>' +
+  '<p>Project FDRCSI akan bekerja di dua provinsi, dengan melibatkan 12 komunitas. Tujuh di Kabupaten lampung Selatan Provinsi Lampung dan lima di Kabupaten Mangarai Barat provinsi Nusa Tenggara Timur.</p>' + 
   '<p style="text-align:center">Scroll to continue<br>▼</p>';
 
 let footerDiv =
@@ -16,13 +16,14 @@ let footerDiv =
   '<p><a href="https://www.mapbox.com/about/maps/" target="_blank">© Mapbox</a> | <a href="http://www.openstreetmap.org/about/" target="_blank">© OpenStreetMap</a> | <a href="https://brown.columbia.edu">The Brown Institute for Media Innovation</a></p>';
 
 let divChapter1 =
-  "<h3>Subway Ridership Plummets</h3>" +
-  '<img src="images/Chapter_1_Image.jpg">' +
+  "<h2>TANGGAMUS</h2>" +
+  '<p>Terletak di Pulau Sumatera, Kabupaten Lampung Selatan dihuni oleh 982.855 jiwa (BPS Lampung Selatan 2016). Penduduk kabupaten ini memiliki kerentanan tinggi terhadap kekeringan, cuaca ekstrim, banjir, gempa bumi, epidemi dan wabah, badai dan abrasi pantai eksrim, tsunami serta longsor (BNPB, 2015).</p>' +
+  '<div class="flourish-embed flourish-table" data-src="visualisation/3919568"></div>' +
   '<p class="imageCredit"><a href="http://www.metouhey.com/">Max Touhey</a></p>' +
   "<p>All around the city subway ridership plummeted during the first two weeks of the Covid-19 outbreak. On average, stations saw a decrease of more than 50% in entries and exits between March 6th and March 20th, 2020. But as this map shows, the drop in ridership did not happen uniformly throughout the city.</p>";
 
 let divChapter2 =
-  "<h3>Forced to work and take the subway</h3>" +
+  "<h3>Risko Banjir</h3>" +
   '<img src="images/Chapter_2_Image.jpg">' +
   '<p class="imageCredit"><a href="https://www.nytimes.com/2020/04/09/nyregion/coronavirus-queens-corona-jackson-heights-elmhurst.html">The New York Times</a></p>' +
   "<p>Income inequality certainly played a role in the uneven distribution of subway usage. By overlaying median household income and change in subway entries it becomes clear that those stations with less change are located in low-income areas, specially in the Bronx and outer Queens and Brooklyn.</p>";
