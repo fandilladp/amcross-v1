@@ -1,4 +1,5 @@
-let topTitleDiv = "<h4>Palang Merah Indonesia supported by American Red Cross | Mid Project Report</h4>";
+let topTitleDiv =
+  "<div class='topnav'><div class='topnav-right'><a class='active' href='#home'>Home</a><a href='#news'>News</a><a href='#contact'>Contact</a><a href='#about'>About</a></div></div><div class='hero-image'><img class='image-header' src='./images/header.jpg'/><div class='hero-text'><h1>Palang Merah Indonesia supported by American Red Cross | Mid Project Report</h1></div></div>";
 
 let titleDiv =
   "<h1>Fostering Disaster-Ready Comunities throught Sustainable and Inclusive Disaster Risk Reduction in Indonesia</h1>";
@@ -6,18 +7,25 @@ let titleDiv =
 let bylineDiv = "<h4>Visualized by Guerrilla Creative</h4>";
 
 let descriptionDiv =
-  '<p>Sejak Januari 2020, melanjutkan Program Pengurangan Risiko Bencana Berbasis Masyarakat atau Community based disaster risk reduction (CBDRR)</p>' +
-  '<p>Palang Merah Indonesia (PMI) bersama Palang Merah Amerika terus membangun kapasitas masyarakat sasaran dalam mempersiapkan dan merespons bencana serta memperkuat kapasitas kelembagaan PMI dalam memberikan kebutuhan dasar melalui program Fostering Disaster-Ready Comunities throught Sustainable and Inclusive Disaster Risk Reduction (FDRCSI-DRR) atau program masyarakat siaga bencana melalui pengurangan risiko bencana berkelanjutan dan inklusif.</p>' +
-  '<p>Project FDRCSI akan bekerja di dua provinsi, dengan melibatkan 12 komunitas. Tujuh di Kabupaten lampung Selatan Provinsi Lampung dan lima di Kabupaten Mangarai Barat provinsi Nusa Tenggara Timur.</p>' + 
+  "<p>Sejak Januari 2020, melanjutkan Program Pengurangan Risiko Bencana Berbasis Masyarakat atau Community based disaster risk reduction (CBDRR)</p>" +
+  "<p>Palang Merah Indonesia (PMI) bersama Palang Merah Amerika terus membangun kapasitas masyarakat sasaran dalam mempersiapkan dan merespons bencana serta memperkuat kapasitas kelembagaan PMI dalam memberikan kebutuhan dasar melalui program Fostering Disaster-Ready Comunities throught Sustainable and Inclusive Disaster Risk Reduction (FDRCSI-DRR) atau program masyarakat siaga bencana melalui pengurangan risiko bencana berkelanjutan dan inklusif.</p>" +
+  "<p>Project FDRCSI akan bekerja di dua provinsi, dengan melibatkan 12 komunitas. Tujuh di Kabupaten lampung Selatan Provinsi Lampung dan lima di Kabupaten Mangarai Barat provinsi Nusa Tenggara Timur.</p>" +
+  '<div style="max-width:2560px; margin-left:auto; margin-right:auto"><iframe title="vimeo-player" src="https://www.youtube.com/embed/ZVrzfEXFOrI?controls=0" width="2000" height="1080" frameborder="0" allowfullscreen></iframe></div>' +
   '<p style="text-align:center">Scroll to continue<br>▼</p>';
 
 let footerDiv =
   '<p>This story is based on data by the <a href="http://web.mta.info/developers/turnstile.html">Metropolitan Transit Authority</a> and reporting by the <a href="https://www.nytimes.com/2020/04/09/nyregion/coronavirus-queens-corona-jackson-heights-elmhurst.html">New York Times</a>, <a href="https://ny.curbed.com/2020/3/24/21192454/coronavirus-nyc-transportation-subway-citi-bike-covid-19">Curbed</a>, and <a href="https://thecity.nyc/2020/03/subway-ridership-plunge-deepest-at-big-manhattan-stations.html">The City</a>.</p>' +
   '<p><a href="https://www.mapbox.com/about/maps/" target="_blank">© Mapbox</a> | <a href="http://www.openstreetmap.org/about/" target="_blank">© OpenStreetMap</a> | <a href="https://brown.columbia.edu">The Brown Institute for Media Innovation</a></p>';
 
+let divChapter0 =
+  "<h3>Lampung</h3>" +
+  '<img src="images/Chapter_4_Image.jpg">' +
+  '<p class="imageCredit"><a href="https://www.nytimes.com/2020/04/09/nyregion/coronavirus-queens-corona-jackson-heights-elmhurst.html">The New York Times</a></p>' +
+  "<p>The South Bronx, perennially marred in social injustice, has also been hard hit during the current COVID-19 outbreak. The area's three main neighborhoods, Mott Haven, Melrose and Port Morris are mostly home to low-income families that have been forced to continue going to work, risking their health and that of their loved ones. Similarly to Jackson Heights in Queens, the areas subway stations have seen a smaller decrease in use than the rest of the city. Median household income in this area oscillates between $15,000 and $30,000.</p>";
+
 let divChapter1 =
   "<h2>TANGGAMUS</h2>" +
-  '<p>Terletak di Pulau Sumatera, Kabupaten Lampung Selatan dihuni oleh 982.855 jiwa (BPS Lampung Selatan 2016). Penduduk kabupaten ini memiliki kerentanan tinggi terhadap kekeringan, cuaca ekstrim, banjir, gempa bumi, epidemi dan wabah, badai dan abrasi pantai eksrim, tsunami serta longsor (BNPB, 2015).</p>' +
+  "<p>Terletak di Pulau Sumatera, Kabupaten Lampung Selatan dihuni oleh 982.855 jiwa (BPS Lampung Selatan 2016). Penduduk kabupaten ini memiliki kerentanan tinggi terhadap kekeringan, cuaca ekstrim, banjir, gempa bumi, epidemi dan wabah, badai dan abrasi pantai eksrim, tsunami serta longsor (BNPB, 2015).</p>" +
   '<div class="flourish-embed flourish-table" data-src="visualisation/3919568"></div>' +
   '<p class="imageCredit"><a href="http://www.metouhey.com/">Max Touhey</a></p>' +
   "<p>All around the city subway ridership plummeted during the first two weeks of the Covid-19 outbreak. On average, stations saw a decrease of more than 50% in entries and exits between March 6th and March 20th, 2020. But as this map shows, the drop in ridership did not happen uniformly throughout the city.</p>";
@@ -50,6 +58,31 @@ let divChapter5 =
   '<p class="imageCredit"><a href="https://www.nytimes.com/2020/04/09/nyregion/coronavirus-queens-corona-jackson-heights-elmhurst.html">The New York Times</a></p>' +
   "<p>The South Bronx, perennially marred in social injustice, has also been hard hit during the current COVID-19 outbreak. The area's three main neighborhoods, Mott Haven, Melrose and Port Morris are mostly home to low-income families that have been forced to continue going to work, risking their health and that of their loved ones. Similarly to Jackson Heights in Queens, the areas subway stations have seen a smaller decrease in use than the rest of the city. Median household income in this area oscillates between $15,000 and $30,000.</p>";
 
+let divChapter6 =
+  "<h3>Pulau NTT</h3>" +
+  '<img src="images/Chapter_4_Image.jpg">' +
+  '<p class="imageCredit"><a href="https://www.nytimes.com/2020/04/09/nyregion/coronavirus-queens-corona-jackson-heights-elmhurst.html">The New York Times</a></p>' +
+  "<p>The South Bronx, perennially marred in social injustice, has also been hard hit during the current COVID-19 outbreak. The area's three main neighborhoods, Mott Haven, Melrose and Port Morris are mostly home to low-income families that have been forced to continue going to work, risking their health and that of their loved ones. Similarly to Jackson Heights in Queens, the areas subway stations have seen a smaller decrease in use than the rest of the city. Median household income in this area oscillates between $15,000 and $30,000.</p>";
+
+let divChapter7 =
+  "<h2>Manggarai</h2>" +
+  "<p>Terletak di Pulau Sumatera, Kabupaten Lampung Selatan dihuni oleh 982.855 jiwa (BPS Lampung Selatan 2016). Penduduk kabupaten ini memiliki kerentanan tinggi terhadap kekeringan, cuaca ekstrim, banjir, gempa bumi, epidemi dan wabah, badai dan abrasi pantai eksrim, tsunami serta longsor (BNPB, 2015).</p>" +
+  '<div class="flourish-embed flourish-table" data-src="visualisation/3919568"></div>' +
+  '<p class="imageCredit"><a href="http://www.metouhey.com/">Max Touhey</a></p>' +
+  "<p>All around the city subway ridership plummeted during the first two weeks of the Covid-19 outbreak. On average, stations saw a decrease of more than 50% in entries and exits between March 6th and March 20th, 2020. But as this map shows, the drop in ridership did not happen uniformly throughout the city.</p>";
+
+let divChapter8 =
+  "<h3>Risko Banjir</h3>" +
+  '<img src="images/Chapter_2_Image.jpg">' +
+  '<p class="imageCredit"><a href="https://www.nytimes.com/2020/04/09/nyregion/coronavirus-queens-corona-jackson-heights-elmhurst.html">The New York Times</a></p>' +
+  "<p>Income inequality certainly played a role in the uneven distribution of subway usage. By overlaying median household income and change in subway entries it becomes clear that those stations with less change are located in low-income areas, specially in the Bronx and outer Queens and Brooklyn.</p>";
+
+let divChapter9 =
+  "<h3>The epicenter of the outbreak</h3>" +
+  '<img src="images/Chapter_3_Image.jpg">' +
+  '<p class="imageCredit"><a href="https://www.nytimes.com/2020/04/09/nyregion/coronavirus-queens-corona-jackson-heights-elmhurst.html">The New York Times</a></p>' +
+  "<p>Elmhurst Hospital Center has been identified as one of the hospitals most overwhelmed by the number of patients with COVID-19 it has received. Located in a low-middle-income area of the city, with a median household income of around $50,000, the hospital serves one of the most diverse and immigrant dense areas of the city. The three subway stations around the hospital have all seen relatively small change in their usage compare to the rest of the city.</p>";
+
 var config = {
   style: "mapbox://styles/fandilladp/ckxdi9e6qeyjl15luv88kx85q",
   accessToken:
@@ -63,10 +96,48 @@ var config = {
   subtitle: "",
   byline: bylineDiv,
   description: descriptionDiv,
-  footer: footerDiv,
+  footer: false,
   chapters: [
     {
-      id: "overallMap",
+      id: "Lampung",
+      alignment: "left",
+      hidden: false,
+      title: "",
+      image: "",
+      description: "",
+      chapterDiv: divChapter0,
+      location: {
+        center: { lon: 104.79504, lat: -5.45454 },
+        zoom: 9.28,
+        pitch: 0.0,
+        bearing: -16.0,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: true,
+      callback: "",
+      onChapterEnter: [
+        {
+          layer: "resikoBanjirTanggamus",
+          opacity: 0,
+        },
+        {
+          layer: "desa-tanggamus-1-1jw5rx",
+          opacity: 0,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: "resikoBanjirTanggamus",
+          opacity: 0,
+        },
+        {
+          layer: "desa-tanggamus-1-1jw5rx",
+          opacity: 0,
+        },
+      ],
+    },
+    {
+      id: "Tanggamus",
       alignment: "left",
       hidden: false,
       chapterDiv: divChapter1,
@@ -93,7 +164,7 @@ var config = {
       onChapterExit: [
         {
           layer: "resikoBanjirTanggamus",
-          opacity: 1,
+          opacity: 0,
         },
         {
           layer: "desa-tanggamus-1-1jw5rx",
@@ -102,7 +173,7 @@ var config = {
       ],
     },
     {
-      id: "incomeUnderlay",
+      id: "ResikoBanjirTanggamus",
       alignment: "left",
       hidden: false,
       title: "",
@@ -111,13 +182,13 @@ var config = {
       chapterDiv: divChapter2,
       location: {
         center: { lon: 104.62852, lat: -5.53842 },
-        zoom: 9.90,
-        pitch: 0.00,
+        zoom: 9.9,
+        pitch: 0.0,
         bearing: -50.92,
         transitionDuration: 5000,
       },
       mapAnimation: "flyTo",
-      rotateAnimation: true,
+      rotateAnimation: false,
       callback: "",
       onChapterEnter: [
         {
@@ -127,13 +198,17 @@ var config = {
       ],
       onChapterExit: [
         {
+          layer: "resikoBanjirTanggamus",
+          opacity: 1,
+        },
+        {
           layer: "desa-tanggamus-1-1jw5rx",
           opacity: 1,
         },
       ],
     },
     {
-      id: "elmhurstHospital",
+      id: "DaerahDampingan",
       alignment: "left",
       hidden: false,
       title: "",
@@ -148,7 +223,7 @@ var config = {
         transitionDuration: 5000,
       },
       mapAnimation: "flyTo",
-      rotateAnimation: true,
+      rotateAnimation: false,
       callback: "",
       onChapterEnter: [
         {
@@ -159,26 +234,140 @@ var config = {
       onChapterExit: [
         {
           layer: "desa-tanggamus-1-1jw5rx",
-          opacity: 0,
+          opacity: 1,
         },
       ],
     },
     {
-      id: "southBronx",
+      id: "manggarai",
       alignment: "right",
       hidden: false,
       title: "",
       image: "",
       description: "",
-      chapterDiv: divChapter5,
+      chapterDiv: divChapter6,
       location: {
-        center: { lon: 104.79504, lat: -5.45454 },
-        zoom: 9.28,
-        pitch: 0.00,
-        bearing: -16.00
+        center: { lon: 120.53556, lat: -8.71461 },
+        zoom: 8.98,
+        pitch: 0.0,
+        bearing: 0.0,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [
+        {
+          layer: "desa-tanggamus-1-1jw5rx",
+          opacity: 1,
+        },
+        {
+          layer: "desa-tanggamus-1-1jw5rx",
+          opacity: 1,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: "desa-tanggamus-1-1jw5rx",
+          opacity: 1,
+        },
+        {
+          layer: "desa-tanggamus-1-1jw5rx",
+          opacity: 1,
+        },
+      ],
+    },
+    {
+      id: "manggarai1",
+      alignment: "right",
+      hidden: false,
+      title: "",
+      image: "",
+      description: "",
+      chapterDiv: divChapter7,
+      location: {
+        center: { lon: 120.37067, lat: -8.61608 },
+        zoom: 10.27,
+        pitch: 60.0,
+        bearing: -91.2,
       },
       mapAnimation: "flyTo",
       rotateAnimation: true,
+      callback: "",
+      onChapterEnter: [
+        {
+          layer: "desa-tanggamus-1-1jw5rx",
+          opacity: 1,
+        },
+        {
+          layer: "desa-tanggamus-1-1jw5rx",
+          opacity: 1,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: "desa-tanggamus-1-1jw5rx",
+          opacity: 1,
+        },
+        {
+          layer: "desa-tanggamus-1-1jw5rx",
+          opacity: 1,
+        },
+      ],
+    },
+    {
+      id: "manggarai2",
+      alignment: "right",
+      hidden: false,
+      title: "",
+      image: "",
+      description: "",
+      chapterDiv: divChapter8,
+      location: {
+        center: { lon: 120.36814, lat: -8.5099 },
+        zoom: 10.08,
+        pitch: 1.0,
+        bearing: -99.2,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [
+        {
+          layer: "desa-tanggamus-1-1jw5rx",
+          opacity: 1,
+        },
+        {
+          layer: "desa-tanggamus-1-1jw5rx",
+          opacity: 1,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: "desa-tanggamus-1-1jw5rx",
+          opacity: 1,
+        },
+        {
+          layer: "desa-tanggamus-1-1jw5rx",
+          opacity: 1,
+        },
+      ],
+    },
+    {
+      id: "manggarai3",
+      alignment: "right",
+      hidden: false,
+      title: "",
+      image: "",
+      description: "",
+      chapterDiv: divChapter9,
+      location: {
+        center: { lon: 120.50754, lat: -8.32941 },
+        zoom: 11.48,
+        pitch: 56.5,
+        bearing: -44.0,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
       callback: "",
       onChapterEnter: [
         {
