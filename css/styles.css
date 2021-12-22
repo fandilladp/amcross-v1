@@ -3,37 +3,36 @@ body {
     padding: 0;
 }
 .topnav {
-  background-color: #333;
+  background-color: rgb(255, 255, 255);
   overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-float: left;
-color: #f2f2f2;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-font-size: 17px;
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-background-color: #ddd;
-color: rgb(167, 167, 167);
+  background-color: rgb(187, 187, 187);
+  color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-background-color: #04AA6D;
-color: white;
+  background-color: #e6e6e6;
+  color: white;
 }
 
 /* Right-aligned section inside the top navigation */
 .topnav-right {
-float: right;
+  float: right;
 }
-
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
@@ -367,13 +366,14 @@ iframe {
   position: sticky;
   left: 0;
   width: 100%;
-  height: 500px;
+  height: 800px;
   margin: 0;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  background-color: #ee6d80;
+  background-color: #fff;
   z-index: 0;
+  padding-bottom: 100px;
 }
 #quotes p {
   text-align: center;
@@ -384,7 +384,7 @@ iframe {
   -moz-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font-size: 20px;
-  font-weight: 900;
-  color: #fff;
+  font-size: 50px;
+  font-weight: 500;
+  color: #000;
 }
