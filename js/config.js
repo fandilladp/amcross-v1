@@ -257,22 +257,22 @@ var config = {
       callback: "",
       onChapterEnter: [
         {
-          layer: "desa-tanggamus-1-1jw5rx",
-          opacity: 1,
+          layer: "manggarai-risikobanjir-583vxu",
+          opacity: 0,
         },
         {
-          layer: "desa-tanggamus-1-1jw5rx",
-          opacity: 1,
+          layer: "manggarai-penduduk-1b90uw",
+          opacity: 0,
         },
       ],
       onChapterExit: [
         {
-          layer: "desa-tanggamus-1-1jw5rx",
-          opacity: 1,
+          layer: "manggarai-risikobanjir-583vxu",
+          opacity: 0,
         },
         {
-          layer: "desa-tanggamus-1-1jw5rx",
-          opacity: 1,
+          layer: "manggarai-penduduk-1b90uw",
+          opacity: 0,
         },
       ],
     },
@@ -333,22 +333,22 @@ var config = {
       callback: "",
       onChapterEnter: [
         {
-          layer: "desa-tanggamus-1-1jw5rx",
+          layer: "manggarai-risikobanjir-583vxu",
           opacity: 1,
         },
         {
-          layer: "desa-tanggamus-1-1jw5rx",
-          opacity: 1,
+          layer: "manggarai-penduduk-1b90uw",
+          opacity: 0,
         },
       ],
       onChapterExit: [
         {
-          layer: "desa-tanggamus-1-1jw5rx",
+          layer: "manggarai-risikobanjir-583vxu",
           opacity: 1,
         },
         {
-          layer: "desa-tanggamus-1-1jw5rx",
-          opacity: 1,
+          layer: "manggarai-penduduk-1b90uw",
+          opacity: 0,
         },
       ],
     },
@@ -371,21 +371,21 @@ var config = {
       callback: "",
       onChapterEnter: [
         {
-          layer: "desa-tanggamus-1-1jw5rx",
+          layer: "manggarai-risikobanjir-583vxu",
           opacity: 1,
         },
         {
-          layer: "desa-tanggamus-1-1jw5rx",
+          layer: "manggarai-penduduk-1b90uw",
           opacity: 1,
         },
       ],
       onChapterExit: [
         {
-          layer: "desa-tanggamus-1-1jw5rx",
+          layer: "manggarai-risikobanjir-583vxu",
           opacity: 1,
         },
         {
-          layer: "desa-tanggamus-1-1jw5rx",
+          layer: "manggarai-penduduk-1b90uw",
           opacity: 1,
         },
       ],
