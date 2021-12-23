@@ -35,23 +35,7 @@ html {
   float: right;
 }
 /* The hero image */
-.hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("/images/header.jpg");
 
-  /* Set a specific height */
-  height: 50%;
-
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
 
 /* Place text in the middle of the image */
 .hero-text {
@@ -78,39 +62,6 @@ html {
   max-width: 800px;
   margin: 0 auto 1em auto;
   height: 400px;
-}
-.parallax {
-  /* The image used */
-  background-image: url("/images/Chapter_1_Image.jpg");
-
-  /* Set a specific height */
-  min-height: 500px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.parallax2 {
-  /* The image used */
-  background-image: url("/images/Chapter_2_Image.jpg");
-
-  /* Set a specific height */
-  min-height: 500px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.paralax-text {
-  height: 500px;
-  background-color: rgb(255, 255, 255);
-  font-size: 36px;
-  padding: 20px;
-  text-align: center;
 }
 .video {
   margin-top: 200px;
