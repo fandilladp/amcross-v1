@@ -41,7 +41,7 @@ html {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("./images/header.jpg");
+    url("/images/header.jpg");
 
   /* Set a specific height */
   height: 50%;
@@ -81,7 +81,7 @@ html {
 }
 .parallax {
   /* The image used */
-  background-image: url("./images/Chapter_1_Image.jpg");
+  background-image: url("/images/Chapter_1_Image.jpg");
 
   /* Set a specific height */
   min-height: 500px;
@@ -94,7 +94,7 @@ html {
 }
 .parallax2 {
   /* The image used */
-  background-image: url("./images/Chapter_2_Image.jpg");
+  background-image: url("/images/Chapter_2_Image.jpg");
 
   /* Set a specific height */
   min-height: 500px;
