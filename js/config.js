@@ -1,5 +1,5 @@
 let topTitleDiv =
-  "<nav class='topnav'><div class='topnav-right'><a class='active' href='index.html'>Page1</a><a href='page2.html'>Page2</a><a href='page3.html'>Page3</a></div></nav><div class='hero-image'><img class='image-header' src='./images/header.jpg'/><div class='hero-text'><h1>Fostering Disaster-Ready Comunities throught Sustainable and Inclusive Disaster Risk Reduction in Indonesia</h1></div></div>";
+  "<nav class='topnav'><div class='topnav-right'><a class='active' href='index.html'>Latar Belakang</a><a href='page2.html'>Peningkatan Kapasitas</a><a href='page3.html'>Harapan Kedepan</a></div></nav><div class='hero-image'><img class='image-header' src='./images/header.jpg'/><div class='hero-text'><h1>Fostering Disaster-Ready Comunities throught Sustainable and Inclusive Disaster Risk Reduction in Indonesia</h1></div></div>";
 
 let titleDiv =
   "<center><h4>Palang Merah Indonesia supported by American Red Cross | Mid Project</h4></center>";
@@ -14,7 +14,7 @@ let descriptionDiv =
   '<p style="text-align:center">Scroll to continue<br>▼</p>';
 
 let footerDiv =
-  '<p>This story is based on data and reporting by the American Red Cross Indonesia</p>' +
+  '<p>Hanya sedikit responden yang mengetahui adanya peraturan penanggulangan bencana di desa mereka, yaitu delapan orang (2%) pada semua responden, empat orang (3%) padaresponden perempuan, empat orang (2%) pada responden laki-laki, tiga orang (2%) di kalangan responden di Manggarai, dan lima orang (2%) pada responden di Tanggamus.</p>' +
   '<p><a href="https://www.mapbox.com/about/maps/" target="_blank">© Mapbox</a> | <a href="http://www.openstreetmap.org/about/" target="_blank">© OpenStreetMap</a> | <a href="https://brown.columbia.edu">The Brown Institute for Media Innovation</a></p>';
 
 let divChapter0 =
@@ -171,7 +171,7 @@ var config = {
       onChapterExit: [
         {
           layer: "resikoBanjirTanggamus",
-          opacity: 0,
+          opacity: 1,
         },
         {
           layer: "desa-tanggamus-1-1jw5rx",
@@ -201,6 +201,9 @@ var config = {
         {
           layer: "resikoBanjirTanggamus",
           opacity: 1,
+        },        {
+          layer: "desa-tanggamus-1-1jw5rx",
+          opacity: 0,
         },
       ],
       onChapterExit: [
