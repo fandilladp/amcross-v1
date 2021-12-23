@@ -1,206 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      body,
-      html {
-        height: 100%;
-      }
-      .topnav {
-        background-color: rgb(255, 255, 255);
-        overflow: hidden;
-      }
 
-      /* Style the links inside the navigation bar */
-      .topnav a {
-        float: left;
-        color: #000000;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AMCROSS</title>
+<link rel="stylesheet" href="./css/page2.css">
+</head>
 
-      /* Change the color of links on hover */
-      .topnav a:hover {
-        background-color: rgb(187, 187, 187);
-        color: black;
-      }
-
-      /* Add a color to the active/current link */
-      .topnav a.active {
-        background-color: #e6e6e6;
-        color: white;
-      }
-
-      /* Right-aligned section inside the top navigation */
-      .topnav-right {
-        float: right;
-      }
-      /* The hero image */
-      .hero-image {
-        /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
-          ),
-          url("./images/header.jpg");
-
-        /* Set a specific height */
-        height: 50%;
-
-        /* Position and center the image to scale nicely on all screens */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-      }
-
-      /* Place text in the middle of the image */
-      .hero-text {
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-      }
-      .light-box {
-        font-size: 5vw;
-        text-align: center;
-        height: 600px;
-      }
-      .light-box .paragraf {
-        padding: 300px;
-        font-size: 2vw;
-        text-align: center;
-        height: 300px;
-      }
-      .parallax {
-        /* The image used */
-        background-image: url("./images/Chapter_1_Image.jpg");
-
-        /* Set a specific height */
-        min-height: 500px;
-
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      .parallax2 {
-        /* The image used */
-        background-image: url("./images/Chapter_2_Image.jpg");
-
-        /* Set a specific height */
-        min-height: 500px;
-
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      .paralax-text {
-        height: 500px;
-        background-color: rgb(255, 255, 255);
-        font-size: 36px;
-        padding: 20px;
-        text-align: center;
-      }
-      .video {
-        margin-top: 200px;
-      }
-    </style>
-  </head>
-  <body>
-    <nav>
-      <div class="topnav">
-        <div class="topnav-right">
-          <a href="index.html">Page1</a>
-          <a class="active" href="#Page2">Page2</a>
-          <a href="page3.html">Page3</a>
-        </div>
-      </div>
-    </nav>
-    <div class="hero-image">
-      <div class="hero-text">
-        <h1>HERO IMAGE</h1>
+<body>
+  <nav>
+    <div class="topnav">
+      <div class="topnav-right">
+        <a href="index.html">Latar Belakang</a>
+        <a class="active" href="page2.html">Peningkatan Kapasitas</a>
+        <a href="page3.html">Harapan Kedepan</a>
       </div>
     </div>
+  </nav>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>HERO IMAGE</h1>
+    </div>
+  </div>
+  <div class="light-box">
+    <h5>Peningkatan kapasitas komunitas </br>dan sekolah</h5>
+  </div>
+
+  <div class="light-box">
+    <p class="paragraf-top">
+      Kegiatan yang dilakukan untuk peningkatan kapasitas tidak berjalan sesuai dengan perencanaan awal. Di tahun 2020
+      Covid-19 masuk ke Indonesia dan peningkatan kasus terjadi siginifikan diantara akhir 2020 dan pertengahan 2021.
+      PMI harus beberapa kali melakukan lock down kantor, sehingga proses pengerjaan menjadi terganggu. Keputusan
+      gubernur dari masing-masing provinsi yang mengeluarkan aturan ketat untuk penyelenggaraan proses pelatihan juga
+      turut menunda pelaksanaan kegiatan dilapangan.</p>
+  </div>
+  <!-- start paralax -->
+  <section id="scrolly">
+    <div class="step">
+      <p id="text-paralax">Peningkatan kapasitas di masyarakat sedikit berjalan dengan dibentuknya sibat di beberapa
+        komunitas sasaran</p>
+    </div>
+    <div class="step">
+      <p id="text-paralax">Tantangan yang cukup sigifikan dirasakan adalaha adanya pandemi ini. Antisipasi yang
+        dilakukan dengan melakuan
+        realokasi budget dan perubahan aktivitas.
+        Aktivitas yang nyata terlihat adalah dengan perubahan kegiatan yang berfokus pada respon Covid-19.</p>
+    </div>
+    <div class="step">
+      <p id="text-paralax">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum recusandae nulla quidem voluptatum accusantium
+        voluptates sed atque et animi illo, pariatur mollitia quod facere expedita dolor harum, dolorem odit repellat.
+      </p>
+    </div>
+  </section>
+  <!-- <div id="test">
+      <div class="paralax-text">
+        <p>  Peningkatan kapasitas di masyarakat sedikit berjalan dengan dibentuknya sibat di beberapa komunitas sasaran.</p>
+      </div>
+      <div class="paralax-text">
+        Tantangan yang cukup sigifikan dirasakan adalaha adanya pandemi ini. Antisipasi yang dilakukan dengan melakuan
+        realokasi budget dan perubahan aktivitas.
+        Aktivitas yang nyata terlihat adalah dengan perubahan kegiatan yang berfokus pada respon Covid-19.
+      </div>
+    </div> -->
+
+  <!-- stop paralax -->
+  <div class="light-box">
+    <h5>Peningkatan kapasitas Institusi (PMI)</h5>
+  </div>
+  <div class="light-box">
+    <p class="paragraf">
+      </br></br>
+      Seperti kegiatan di masyarakat dan sekolah peningkatan kapasitas di PMI lokal juga sempat tidak berjalan dengan
+      baik. Namun pendampingan masih dilakukan dari PMI pusat terkait kegiatan project dan respon covid.
+      PMI Tanggamus berhasil membuat Business continuities plan (BCP) terkait layanan yang diberikan selama masa
+      pandemi Covid-19.
+      Rekruitmen juga dilakukan untuk relawan PMI dan diberikan pelatihan terkait ICBRR.
+    </p>
+  </div>
+  <div class="video">
+    <iframe width="100%" height="800px" src="https://www.youtube.com/embed/Yf3idRC2xpA" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
+      allowfullscreen></iframe>
+  </div>
+  <div>
+    <p class="paragraf-single">
+      </br>Tantangan yang cukup sigifikan dirasakan adalaha adanya pandemi ini. Antisipasi yang dilakukan dengan
+      melakuan realokasi budget dan perubahan aktivitas.
+      Aktivitas yang nyata terlihat adalah dengan perubahan kegiatan yang berfokus pada respon Covid-19.</br></br>
+      Pengembangan materi KIE dilakukan sebagai bentuk edukasi yang lebih mudah untuk dipahami bagi masyarakat, selain
+      itu hotline covid-19 dibentuk dan dimotori oleh para relawan PMI. Siaran Radio menjadi salah satu yang merupakan
+      kampanye perilaku hidup dan sehat selama covid-19.
+      </br></br>
+      Berikut ini rangkuman kegiatan yang sudah dilakukan oleh PMI dilapangan.
+    </p>
+  </div>
+  <div class="timeline-js">
     <iframe
-      src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1cWqQBZCkX9GpzFtxCWHoqFXCHg-ylTVUWlnrdYMzKUI&font=Default&lang=en&initial_zoom=2&height=650"
-      height="800px"
-      width="100%"
-      frameborder="0"
-    ></iframe>
-    <div class="light-box">
-      <h2>Peningkatan kapasitas komunitas dan sekolah</h2>
-    </div>
-    <div>
-      <div class="parallax"></div>
-      <div class="paralax-text">
-        Scroll Up and Down this page to see the parallax scrolling effect. This
-        div is just here to enable scrolling. Tip: Try to remove the
-        background-attachment property to remove the scrolling effect.
-      </div>
-      <div class="parallax2"></div>
-      <div class="paralax-text">
-        Scroll Up and Down this page to see the parallax scrolling effect. This
-        div is just here to enable scrolling. Tip: Try to remove the
-        background-attachment property to remove the scrolling effect.
-      </div>
-      <div class="parallax"></div>
-    </div>
+      src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1EVw_I-F-m3Zq0qNYeGO9Kij_-G6C6iv2ZDdAz2lsS1I&font=Default&lang=en&initial_zoom=2&height=800"
+      height="800px" width="100%" frameborder="0"></iframe>
+  </div>
+  <footer id="footer">
+    <a class="next-page" href="page3.html">
+      <p>Next Page</p>
+    </a>
+  </footer>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
+  <script src="https://unpkg.com/intersection-observer"></script>
+  <script src="./js/scrollama.min.js"></script>
+  <script src="./js/sideScrolama.js"></script>
+</body>
 
-    <div class="light-box">
-      <h2>Peningkatan kapasitas Institusi (PMI)</h2>
-    </div>
-    <div class="light-box">
-      <p class="paragraf">
-        Far far away, behind the word mountains, far from the countries Vokalia
-        and Consonantia, there live the blind texts. Separated they live in
-        Bookmarksgrove right at the coast of the Semantics, a large language
-        ocean. A small river named Duden flows by their place and supplies it
-        with the necessary regelialia. It is a paradisematic country, in which
-        roasted parts of sentences fly into your mouth. Even the all-powerful
-        Pointing has no control about the blind texts it is an almost
-        unorthographic life One day however a small line of blind text by the
-        name of Lorem Ipsum
-      </p>
-    </div>
-    <div class="video">
-      <iframe
-        width="100%"
-        height="900px"
-        src="https://www.youtube.com/embed/TyyYi86Tgr4"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
-        allowfullscreen
-      ></iframe>
-    </div>
-    <div class="light-box">
-      <p class="paragraf">
-        Far far away, behind the word mountains, far from the countries Vokalia
-        and Consonantia, there live the blind texts. Separated they live in
-        Bookmarksgrove right at the coast of the Semantics, a large language
-        ocean. A small river named Duden flows by their place and supplies it
-        with the necessary regelialia. It is a paradisematic country, in which
-        roasted parts of sentences fly into your mouth. Even the all-powerful
-        Pointing has no control about the blind texts it is an almost
-        unorthographic life One day however a small line of blind text by the
-        name of Lorem Ipsum
-      </p>
-    </div>
-    <script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
-    <script src="https://unpkg.com/intersection-observer"></script>
-    <script src="./js/scrollama.min.js"></script>
-    <script src="./js/sideScrolama.js"></script>
-  </body>
 </html>
