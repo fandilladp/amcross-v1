@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8" />
   <title>AMCROSS</title>
+  <meta name="description" content="Palang Merah Indonesia (PMI) bersama Palang Merah Amerika terus membangun kapasitas masyarakat sasaran dalam
+  mempersiapkan dan merespons bencana serta memperkuat kapasitas kelembagaan PMI dalam memberikan kebutuhan dasar
+  melalui program Fostering Disaster-Ready Comunities throught Sustainable and Inclusive Disaster Risk Reduction
+  (FDRCSI-DRR) atau program masyarakat siaga bencana melalui pengurangan risiko bencana berkelanjutan dan
+  inklusif.">
   <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
   <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js"></script>
   <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css" rel="stylesheet" />
@@ -18,20 +22,29 @@
   <script src="https://unpkg.com/intersection-observer"></script>
   <script src="./js/scrollama.min.js"></script>
   <script src="https://public.flourish.studio/resources/embed.js"></script>
+  <style>
+    .hero-image {
+      /* The image used */
+      background-image: url("images/header.jpg");
+
+      /* Add the blur effect */
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+
+      /* Set a specific height */
+      height: 100vh;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
 </head>
 
 <body>
-  <!-- <nav>
-    <div class="topnav">
-      <div class="topnav-right">
-        <a href="index.html">Latar Belakang</a>
-        <a class="active" href="page2.html">Peningkatan Kapasitas</a>
-        <a href="page3.html">Harapan Kedepan</a>
-      </div>
-    </div>
-  </nav> -->
   <div id="map"></div>
-  <!-- <div id="story"></div> -->
   <header>
     <nav id="navbar">
       <div class="topnav">
@@ -165,18 +178,26 @@
       <h1>BASELINE PROJECT</h1>
       <div><img src="images/baseline01.jpeg"></div>
       <p class='imageCredit'><a href=''>PMI Tanggamus</a></p>
-      <p>Provinsi Lampung dan Nusa Tenggara Timur di pilih berdasarkan wilayah prioritas tinggi Margaret A Cargill Philantropies (MACP) dan ditetapkan dalam kelas risiko tinggi dalam indeks pengurangan risiko nasional.</p>
-      <p>Project ini bertujuan untuk lebih membangun kapasitas masyarakat sasaran dalam mempersiapkan dan menghadapi bencana, serta untuk memperkuat kapasitas kelembagaan PMI dalam memberikan layanan manajemen risiko bencana yang penting kepada masyarakat dengan berfokus pada kesiapsiagaan bencana melalui proyek ini diharapkan bisa mengatasi beberapa kerentanan khususnya kesenjangan, ketidaksetaraan, pengucilan dan degredasi lingkungan kronis.</p>
-      <div class="vidio-intro"><iframe class="youtube"  title="vimeo-player" src="https://www.youtube.com/embed/MYhIAlRqkqs?controls=0" frameborder="0" allowfullscreen></iframe></div>
-      <p>Berdasarkan data awal yang didapatkan melalui baseline masyarakat  dan komunitas sekolah memiliki pengetahuan mengena risiko bencana yang ada di lingkungan mereka, namum masih sedikit yang tau bagaimana respon yang tepat dalam merencanakan atau bereaksi ketika bencana terjadi.</p>
-      <p>Peningkatan kapasitas di masyarakat sedikit berjalan dengan dibentuknya sibat di beberapa komunitas sasaran. Selanjutnya aktivitas yang dilakukan banyak yang berhubungan dengan respon covid-19 di area implementasi</p>
+      <p>Provinsi Lampung dan Nusa Tenggara Timur di pilih berdasarkan wilayah prioritas tinggi Margaret A Cargill
+        Philantropies (MACP) dan ditetapkan dalam kelas risiko tinggi dalam indeks pengurangan risiko nasional.</p>
+      <p>Project ini bertujuan untuk lebih membangun kapasitas masyarakat sasaran dalam mempersiapkan dan menghadapi
+        bencana, serta untuk memperkuat kapasitas kelembagaan PMI dalam memberikan layanan manajemen risiko bencana yang
+        penting kepada masyarakat dengan berfokus pada kesiapsiagaan bencana melalui proyek ini diharapkan bisa
+        mengatasi beberapa kerentanan khususnya kesenjangan, ketidaksetaraan, pengucilan dan degredasi lingkungan
+        kronis.</p>
+      <div class="vidio-intro"><iframe class="youtube" title="vimeo-player"
+          src="https://www.youtube.com/embed/MYhIAlRqkqs?controls=0" frameborder="0" allowfullscreen></iframe></div>
+      <p>Berdasarkan data awal yang didapatkan melalui baseline masyarakat  dan komunitas sekolah memiliki pengetahuan
+        mengena risiko bencana yang ada di lingkungan mereka, namum masih sedikit yang tau bagaimana respon yang tepat
+        dalam merencanakan atau bereaksi ketika bencana terjadi.</p>
+      <p>Peningkatan kapasitas di masyarakat sedikit berjalan dengan dibentuknya sibat di beberapa komunitas sasaran.
+        Selanjutnya aktivitas yang dilakukan banyak yang berhubungan dengan respon covid-19 di area implementasi</p>
     </div>
     <div class="baseline-project" id="root">
       <figure id='quotes'>
         <h1>BASELINE STUDY</h1>
-        <div class="vidio-intro"><iframe class="youtube"  title="vimeo-player"
-            src="https://www.youtube.com/embed/qVWCkzdufUk?controls=0" frameborder="0"
-            allowfullscreen></iframe></div>'
+        <div class="vidio-intro"><iframe class="youtube" title="vimeo-player"
+            src="https://www.youtube.com/embed/qVWCkzdufUk?controls=0" frameborder="0" allowfullscreen></iframe></div>'
       </figure>
       <div class="row justify-content-center" id="scrolly__section">
         <div class="col-4 scrolly__content">
@@ -280,7 +301,7 @@
   </main>
   <footer id="footer">
     <a class="next-page" href="page2.html">
-     <button>Next Page</button>
+      <button>Next Page</button>
     </a>
   </footer>
   <script>
@@ -293,7 +314,6 @@
       }
     }
   </script>
-  <script src="./js/config.js"></script>
   <script src="./js/map.js"></script>
   <script src="./js/flourish.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

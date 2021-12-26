@@ -84,23 +84,6 @@ body {
 
 /* Right-aligned section inside the top navigation */
 /* The hero image */
-.hero-image {
-  /* The image used */
-  background-image: url("images/header.jpg");
-
-  /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-
-  /* Set a specific height */
-  height: 100vh;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 /* Place text in the middle of the image */
 .hero-text {
