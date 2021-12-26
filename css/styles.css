@@ -86,7 +86,7 @@ body {
 /* The hero image */
 .hero-image {
   /* The image used */
-  background-image: url("/images/header.jpg");
+  background-image: url("images/header.jpg");
 
   /* Add the blur effect */
   filter: blur(8px);
