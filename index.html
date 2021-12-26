@@ -1,142 +1,307 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>AMCROSS</title>
-    <meta
-      name="viewport"
-      content="initial-scale=1,maximum-scale=1,user-scalable=no"
-    />
-    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js"></script>
-    <link
-      href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css"
-      rel="stylesheet"
-    />
-    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
-    <script src="https://unpkg.com/scrollama"></script>
-    <script src="https://public.flourish.studio/resources/embed.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
-    <script src="https://unpkg.com/intersection-observer"></script>
-    <script src="./js/scrollama.min.js"></script>
-    <script src="https://public.flourish.studio/resources/embed.js"></script>
-  </head>
 
-  <body>
-    <div id="map"></div>
-    <div id="story"></div>
-    <main>
-        <div class="container-fluid" id="root">
-            <figure id='quotes'>
-            </br>
-              <h1 style="text-align: center;">BASELINE STUDY</h1>
-              '<div style="max-width:1280px; margin-left:auto; margin-right:auto"><iframe title="vimeo-player" src="https://www.youtube.com/embed/qVWCkzdufUk?controls=0" width="1280" height="720" frameborder="0" allowfullscreen></iframe></div>'
-            </figure>
-            <div class="row justify-content-center" id="scrolly__section">
-              <div class="col-4 scrolly__content">
-                <div class="step2" data-step="1">
-                  <div class="text-block pa-2">
-                    <p class="text-body-1">Sebaran Responden</p>
-                    <p>
-                      Responden survei dasar rumah tangga FDRCSI-DRR mencakup 397 orang dewasa tersebar di 2 Kabupaten yaitu Kabupaten Manggarai sebanyak 180 orang dan Kabupaten Tanggamus sebanyak 234 orang.
-                    </p>
-                  </div>
-                </div>
-                <div class="step2" data-step="2">
-                  <div class="text-block pa-2">
-                    <p class="text-body-1">Jenis Bencana yang terjadi di desa responden</p>
-                    <p class="text-body-2">
-                      Dari jenis risiko bencana yang ditanyakan, responden lebih mengetahui tindakan respon banjir yang merupakan risiko utama di wilayah sasaran, responden di Manggarai lebih paham daripada responden di Tanggamus.</p>
-                      <p class="text-body-3">
-                      Untuk bisa menyortir grafik, silahkan klik ikon gir di pojok kanan bawah grafik.
-                    </p>
-                  </div>
-                </div>
-                <div class="step2" data-step="3">
-                  <div class="text-block pa-2">
-                    <p class="text-body-1">Jenis Bencana yang terjadi di desa responden (per kabupaten)</p>
-                    <p class="text-body-2">
-                      Mayoritas responden (257 responden atau 65%) mampu menyebutkan setidaknya satu potensi bahaya sedangkan 107 responden (27%) dapat menyebutkan dua potensi bahaya, 21 responden (5%) dapat menyebutkan tiga potensi bahaya dan hanya sembilan responden (2%) yang dapat menyebutkan empat potensi bahaya.
-                    </p>
-                  </div>
-                </div>
-                <div class="step2" data-step="4">
-                  <div class="text-block pa-2">
-                    <p class="text-body-1">Apakah di desa responden memiliki sistem peringatan dini?</p>
-                    <p class="text-body-2">
-                      Dari total responden di kedua Kabupaten, mayoritas menyatakan <b>tidak mengetahui</b> apakah di desanya memiliki sistem peringatan dini.
-                    </p>
-                  </div>
-                </div>
-                <div class="step2" data-step="5">
-                  <div class="text-block pa-2">
-                    <p class="text-body-1">Apakah di desa responden memiliki sistem peringatan dini? (per kabupaten)</p>
-                    <p class="text-body-2">
-                      Bila dilihat dari grafik, mayoritas responden dari kedua Kabupaten tidak mengetahui adanya sistem peringatan dini di desa mereka.
-                    </p>
-                  </div>
-                </div>
-                <div class="step2" data-step="6">
-                  <div class="text-block pa-2">
-                    <p class="text-body-1">Darimana responden mendapatkan informasi peringatan dini?</p>
-                    <p class="text-body-2">
-                      Pada grafik ini, 3 respon terbesar untuk mendapatkan informasi peringatan dini adalah melalui teman, gejala alam dan HP
-                    </p>
-                  </div>
-                </div>
-                <div class="step2" data-step="7">
-                  <div class="text-block pa-2">
-                    <p class="text-body-1">Darimana responden mendapatkan informasi peringatan dini? (per kabupaten)</p>
-                    <p class="text-body-2">
-                      Responden di kedua Kabupaten menyatakan tidak mengetahui darimana mendapatkan informasi peringatan dini.
-                    </p>
-                  </div>
-                </div>
-                <div class="step2" data-step="8">
-                  <div class="text-block pa-2">
-                    <p class="text-body-1">Apa yang responden lakukan ketika mendapatkan info peringatan dini?</p>
-                    <p class="text-body-2">
-                      Hanya sedikit responden yang mengetahui adanya peraturan penanggulangan bencana di desa mereka, yaitu delapan orang (2%) pada semua responden, empat orang (3%) padaresponden perempuan, empat orang (2%) pada responden laki-laki, tiga orang (2%) di kalangan responden di Manggarai, dan lima orang (2%) pada responden di Tanggamus.
-                    </p>
-                  </div>
-                </div>
-                <div class="step2" data-step="9">
-                  <div class="text-block pa-2">
-                    <p class="text-body-1">Apa yang responden lakukan ketika mendapatkan info peringatan dini?(per kabupaten)</p>
-                    <p class="text-body-2">
-                      Hanya sedikit responden yang mengetahui adanya peraturan penanggulangan bencana di desa mereka, yaitu delapan orang (2%) pada semua responden, empat orang (3%) padaresponden perempuan, empat orang (2%) pada responden laki-laki, tiga orang (2%) di kalangan responden di Manggarai, dan lima orang (2%) pada responden di Tanggamus.
-                    </p>
-                  </div>
-                </div>
-              </div>
-      
-              <div class="col-6 scrolly__chart">
-                <iframe
-                  scrolling="no"
-                  src="https://public.flourish.studio/story/1072910/embed#slide-0"
-                ></iframe>
-              </div>
-            </div>
+<head>
+  <meta charset="utf-8" />
+  <title>AMCROSS</title>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js"></script>
+  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css" rel="stylesheet" />
+  <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+  <script src="https://unpkg.com/scrollama"></script>
+  <script src="https://public.flourish.studio/resources/embed.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
+  <script src="https://unpkg.com/intersection-observer"></script>
+  <script src="./js/scrollama.min.js"></script>
+  <script src="https://public.flourish.studio/resources/embed.js"></script>
+</head>
+
+<body>
+  <!-- <nav>
+    <div class="topnav">
+      <div class="topnav-right">
+        <a href="index.html">Latar Belakang</a>
+        <a class="active" href="page2.html">Peningkatan Kapasitas</a>
+        <a href="page3.html">Harapan Kedepan</a>
+      </div>
+    </div>
+  </nav> -->
+  <div id="map"></div>
+  <!-- <div id="story"></div> -->
+  <header>
+    <nav id="navbar">
+      <div class="topnav">
+        <div class="topnav-right">
+          <a href="index.html">
+            <button class="active">
+              Latar Belakang
+            </button>
+          </a>
+          <a href="page2.html"><button>
+              Peningkatan Kapasitas
+            </button></a>
+          <a href="page3.html">
+            <button>
+              Harapan Kedepan
+            </button></a>
+          <button onclick="myFunction()" class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
-      </main>
-      <footer id="footer">
-          <a class="next-page" href="page2.html"><h1>Next Page</h1></a>
-      </footer>
-    <script src="./js/config.js"></script>
-    <script src="./js/map.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      </div>
+    </nav>
+    <div class="hero-image"></div>
+    <div class="hero-text">
+      <h2>Fostering Disaster-Ready Comunities throught Sustainable and Inclusive Disaster Risk Reduction in Indonesia
+      </h2>
+    </div>
+  </header>
+  <main>
+    <div class="intro">
+      <h4>Palang Merah Indonesia supported by American Red Cross | Mid Project</h4>
+      <p>Sejak Januari 2020, melanjutkan Program Pengurangan Risiko Bencana Berbasis Masyarakat atau Community based
+        disaster risk reduction (CBDRR)</p>
+      <p>Palang Merah Indonesia (PMI) bersama Palang Merah Amerika terus membangun kapasitas masyarakat sasaran dalam
+        mempersiapkan dan merespons bencana serta memperkuat kapasitas kelembagaan PMI dalam memberikan kebutuhan dasar
+        melalui program Fostering Disaster-Ready Comunities throught Sustainable and Inclusive Disaster Risk Reduction
+        (FDRCSI-DRR) atau program masyarakat siaga bencana melalui pengurangan risiko bencana berkelanjutan dan
+        inklusif.</p>
+      <p>Project FDRCSI akan bekerja di dua provinsi, dengan melibatkan 12 komunitas. Tujuh di Kabupaten Tanggamus
+        Provinsi Lampung dan lima di Kabupaten Manggarai Barat provinsi Nusa Tenggara Timur.</p>
+      <div class="vidio-intro"><iframe class="youtube" title="vimeo-player"
+          src="https://www.youtube.com/embed/Sr30IEiPoC4?controls=0" frameborder="0" allowfullscreen></iframe></div>
+      <p style="text-align:center">Scroll to continue<br>▼</p>
+    </div>
+    <div id="features">
+      <section id="lampung" class="step" step-num="1">
+        <h3>Lampung</h3>
+        <img src="images/provlampung.jpg">
+        <p class="imageCredit"><a
+            href="https://lampung.bps.go.id/publication/2021/09/03/71dfb425039080bb0d5617d0/potret-sensus-penduduk-2020-provinsi-lampung.html">Provinsi
+            Lampung</a></p>
+        <p>Dengan luas wilayah Provinsi Lampung sebesar 34,62 ribu kilometer persegi, maka kepadatan penduduk Provinsi
+          Lampung pada tahun 2020 sebanyak 260 jiwa per kilometer persegi. Angka ini meningkat dari hasil SP2010 yang
+          mencatat kepadatan penduduk Provinsi Lampung sebanyak 220 jiwa per kilometer persegi dan hasil SP2000 yang
+          mencapai 192 jiwa per kilometer persegi.</p>
+      </section>
+      <section id="tanggamus" class="step" step-num="2">
+        <h3>TANGGAMUS</h3>
+        <img src="images/gee-tgm.jpg">
+        <p class="imageCredit"><a
+            href="https://kimyrae1.users.earthengine.app/view/banjir-kabupaten-tanggamus-2021">Analisis Google Earth
+            Engine Alluvionne</a></p>
+        <p>Kabupaten Tanggamus adalah salah satu kabupaten di Provinsi Lampung, Indonesia. Ibu kota kabupaten ini
+          terletak di Kota Agung. Kabupaten ini memiliki luas wilayah 4.654,98 Km² dan berpenduduk sebanyak 640.275 jiwa
+          (2020) dengan kepadatan penduduk 137 jiwa/km². Badan Penanggulangan Bencana Daerah (BPBD) Kabupaten Tanggamus
+          menyatakan ada 12 kecamatan di Bumi Begawi Jejama ini yang masuk dalam katagori rawan bencana banjir dan tanah
+          longsor. Itu terjadi karena selain berada diwilayah perbukitan juga sungai yang berukuran besar.</p>
+      </section>
+      <section id="risikoBanjirTanggamus" class="step" step-num="3">
+        <h3>Risiko Banjir</h3>
+        <img src="images/banjirsemaka1.jpg">
+        <p class="imageCredit"><a href="https://inarisk.bnpb.go.id/pdf/Buku%20RBI_Final_low.pdf">RBI BNPB</a></p>
+        <p>Berdasarkan kajian risiko inaRISK BNPB, kabupaten Tanggamus memiliki index risiko dengan nilai 0.083 - 0.658
+          yaitu rendah sampai tinggi.</p>
+      </section>
+      <section id="desaDampinganTanggamus" class="step" step-num="4">
+        <h3>Desa Dampingan di kabupaten Tanggamus</h3>
+        <img src="images/tgm-des.jpeg">
+        <p>Palang Merah Amerika dan PMI telah memilih tujuh desa di kecamatan Semaka, kabupaten Tanggamus untuk
+          implementasi berdasarkan pada kriteria yang disepakati untuk pemilihan desa terkait dengan unsur-unsur potensi
+          cabang PMI tingkat kabupaten yang mungkin relatif lebih kondusif untuk keberhasilan koordinasi dan
+          implementasi, sambil tetap mengakui bahwa peningkatan kapasitas cabang-cabang ini akan menjadi pusat komponen
+          kesiapan kelembagaan dari proyek.</p>
+        <div class="flourish-embed flourish-table" data-src="visualisation/3919568"></div>
+      </section>
+      <section id="NTT" class="step" step-num="5">
+        <h3>Pulau NTT</h3>
+        <img src="images/ra-ntt.png">
+        <p class="imageCredit"><a href="https://localisesdgs-indonesia.org/profil-tpb/profil-daerah/17">Profil Daerah
+            NTT</a></p>
+        <p>Wilayah administratif NTT terdiri atas 12 daerah Kabupaten/Kota. Jumlah ini terus bertambah hingga pada tahun
+          2019 wilayah administratif NTT terbagi atas 21 Kabupaten dan 1 Kota. Satu-satunya kota di NTT yaitu Kota
+          Kupang, ibukota provinsi NTT yang berada bagian barat Pulau Timor. Provinsi dengan satwa endemik Komodo ini
+          memiliki luas wilayah darat seluas 47.931,54 km2. Berdasarkan data BPS tahun 2020, jumlah populasi di Provinsi
+          NTT mencapai 5.325.566 jiwa dengan kepadatan penduduk sebesar 111 jiwa per km2. Jika dilihat berdasarkan jenis
+          kelamin, penduduk dengan jenis kelamin perempuan lebih tinggi daripada laki-laki terutama dengan rasio jenis
+          kelamin di Provinsi NTT tahun 2020 sebesar 98,19 persen.</p>
+      </section>
+      <section id="kabupatenManggarai" class="step" step-num="6">
+        <h3>Kabupaten Manggarai</h3>
+        <img src="images/gee-mgr.png">
+        <p class="imageCredit"><a
+            href="https://kimyrae1.users.earthengine.app/view/banjir-kabupaten-manggarai-tahun-2021/">Analisis Google
+            Earth Engine Alluvionne</a></p>
+        <p>Kabupaten Manggarai merupakan daerah dataran tinggi yang didominasi oleh bentuk permukaan daratan yang
+          bergelombang dengan kemiringan lahan ≥40% (pegunungan) yaitu seluas 38,36% dan kemiringan lahan antara 15%-40%
+          yakni seluas 55,41% dari luas wilayah Kabupaten Manggarai. Kabupaten Manggarai memiliki 12 sungai yang
+          berpotensi banjir, dari beberapa sungai tersebut diatas pada tahun 2019 telah menyebabkan banjir dan
+          mengakibatkan rusaknyanya fasilitas masyarakat dan fasilitas umum lainnya sejumlah 22 Kejadian.</p>
+      </section>
+      <section id="risikoBanjirManggarai" class="step" step-num="7">
+        <h3>Risiko Banjir</h3>
+        <img src="images/mgr-bnj.jpg">
+        <p class="imageCredit"><a href="https://inarisk.bnpb.go.id/pdf/Buku%20RBI_Final_low.pdf">RBI BNPB</a></p>
+        <p>Berdasarkan kajian risiko inaRISK BNPB, kabupaten Manggarai memiliki index risiko dengan nilai 0.072 - 0.616
+          yaitu rendah sampai sedang.</p>
+      </section>
+      <section id="desaDampinganManggarai" class="step" step-num="8">
+        <h3>Desa Dampingan di kabupaten Manggarai</h3>
+        <img src="images/manggarai-keg01.jpg">
+        <p>Palang Merah Amerika dan PMI telah memilih lima desa di Kecamatan Reok, Kabupaten Reok. Penduduk di kabupaten
+          ini juga menghadapi paparan yang tinggi terhadap cuaca ekstrem, kekeringan, gempa bumi, tanah longsor, banjir,
+          wabah penyakit dan wabah, tsunami serta badai dan abrasi pantai yang ekstrem (Badan Nasional Penanggulangan
+          Bencana, 2015).</p>
+      </section>
+    </div>
+    <div class="baseline-project">
+      <h1>BASELINE PROJECT</h1>
+      <div><img src="images/baseline01.jpeg"></div>
+      <p class='imageCredit'><a href=''>PMI Tanggamus</a></p>
+      <p>Provinsi Lampung dan Nusa Tenggara Timur di pilih berdasarkan wilayah prioritas tinggi Margaret A Cargill Philantropies (MACP) dan ditetapkan dalam kelas risiko tinggi dalam indeks pengurangan risiko nasional.</p>
+      <p>Project ini bertujuan untuk lebih membangun kapasitas masyarakat sasaran dalam mempersiapkan dan menghadapi bencana, serta untuk memperkuat kapasitas kelembagaan PMI dalam memberikan layanan manajemen risiko bencana yang penting kepada masyarakat dengan berfokus pada kesiapsiagaan bencana melalui proyek ini diharapkan bisa mengatasi beberapa kerentanan khususnya kesenjangan, ketidaksetaraan, pengucilan dan degredasi lingkungan kronis.</p>
+      <div class="vidio-intro"><iframe class="youtube"  title="vimeo-player" src="https://www.youtube.com/embed/MYhIAlRqkqs?controls=0" frameborder="0" allowfullscreen></iframe></div>
+      <p>Berdasarkan data awal yang didapatkan melalui baseline masyarakat  dan komunitas sekolah memiliki pengetahuan mengena risiko bencana yang ada di lingkungan mereka, namum masih sedikit yang tau bagaimana respon yang tepat dalam merencanakan atau bereaksi ketika bencana terjadi.</p>
+      <p>Peningkatan kapasitas di masyarakat sedikit berjalan dengan dibentuknya sibat di beberapa komunitas sasaran. Selanjutnya aktivitas yang dilakukan banyak yang berhubungan dengan respon covid-19 di area implementasi</p>
+    </div>
+    <div class="baseline-project" id="root">
+      <figure id='quotes'>
+        <h1>BASELINE STUDY</h1>
+        <div class="vidio-intro"><iframe class="youtube"  title="vimeo-player"
+            src="https://www.youtube.com/embed/qVWCkzdufUk?controls=0" frameborder="0"
+            allowfullscreen></iframe></div>'
+      </figure>
+      <div class="row justify-content-center" id="scrolly__section">
+        <div class="col-4 scrolly__content">
+          <div class="step2" data-step="1">
+            <div class="text-block pa-2">
+              <p class="text-body-1">Sebaran Responden</p>
+              <p>
+                Responden survei dasar rumah tangga FDRCSI-DRR mencakup 397 orang dewasa tersebar di 2 Kabupaten yaitu
+                Kabupaten Manggarai sebanyak 180 orang dan Kabupaten Tanggamus sebanyak 234 orang.
+              </p>
+            </div>
+          </div>
+          <div class="step2" data-step="2">
+            <div class="text-block pa-2">
+              <p class="text-body-1">Jenis Bencana yang terjadi di desa responden</p>
+              <p class="text-body-2">
+                Dari jenis risiko bencana yang ditanyakan, responden lebih mengetahui tindakan respon banjir yang
+                merupakan risiko utama di wilayah sasaran, responden di Manggarai lebih paham daripada responden di
+                Tanggamus.</p>
+              <p class="text-body-3">
+                Untuk bisa menyortir grafik, silahkan klik ikon gir di pojok kanan bawah grafik.
+              </p>
+            </div>
+          </div>
+          <div class="step2" data-step="3">
+            <div class="text-block pa-2">
+              <p class="text-body-1">Jenis Bencana yang terjadi di desa responden (per kabupaten)</p>
+              <p class="text-body-2">
+                Mayoritas responden (257 responden atau 65%) mampu menyebutkan setidaknya satu potensi bahaya sedangkan
+                107 responden (27%) dapat menyebutkan dua potensi bahaya, 21 responden (5%) dapat menyebutkan tiga
+                potensi
+                bahaya dan hanya sembilan responden (2%) yang dapat menyebutkan empat potensi bahaya.
+              </p>
+            </div>
+          </div>
+          <div class="step2" data-step="4">
+            <div class="text-block pa-2">
+              <p class="text-body-1">Apakah di desa responden memiliki sistem peringatan dini?</p>
+              <p class="text-body-2">
+                Dari total responden di kedua Kabupaten, mayoritas menyatakan <b>tidak mengetahui</b> apakah di desanya
+                memiliki sistem peringatan dini.
+              </p>
+            </div>
+          </div>
+          <div class="step2" data-step="5">
+            <div class="text-block pa-2">
+              <p class="text-body-1">Apakah di desa responden memiliki sistem peringatan dini? (per kabupaten)</p>
+              <p class="text-body-2">
+                Bila dilihat dari grafik, mayoritas responden dari kedua Kabupaten tidak mengetahui adanya sistem
+                peringatan dini di desa mereka.
+              </p>
+            </div>
+          </div>
+          <div class="step2" data-step="6">
+            <div class="text-block pa-2">
+              <p class="text-body-1">Darimana responden mendapatkan informasi peringatan dini?</p>
+              <p class="text-body-2">
+                Pada grafik ini, 3 respon terbesar untuk mendapatkan informasi peringatan dini adalah melalui teman,
+                gejala alam dan HP
+              </p>
+            </div>
+          </div>
+          <div class="step2" data-step="7">
+            <div class="text-block pa-2">
+              <p class="text-body-1">Darimana responden mendapatkan informasi peringatan dini? (per kabupaten)</p>
+              <p class="text-body-2">
+                Responden di kedua Kabupaten menyatakan tidak mengetahui darimana mendapatkan informasi peringatan dini.
+              </p>
+            </div>
+          </div>
+          <div class="step2" data-step="8">
+            <div class="text-block pa-2">
+              <p class="text-body-1">Apa yang responden lakukan ketika mendapatkan info peringatan dini?</p>
+              <p class="text-body-2">
+                Hanya sedikit responden yang mengetahui adanya peraturan penanggulangan bencana di desa mereka, yaitu
+                delapan orang (2%) pada semua responden, empat orang (3%) padaresponden perempuan, empat orang (2%) pada
+                responden laki-laki, tiga orang (2%) di kalangan responden di Manggarai, dan lima orang (2%) pada
+                responden di Tanggamus.
+              </p>
+            </div>
+          </div>
+          <div class="step2" data-step="9">
+            <div class="text-block pa-2">
+              <p class="text-body-1">Apa yang responden lakukan ketika mendapatkan info peringatan dini?(per kabupaten)
+              </p>
+              <p class="text-body-2">
+                Hanya sedikit responden yang mengetahui adanya peraturan penanggulangan bencana di desa mereka, yaitu
+                delapan orang (2%) pada semua responden, empat orang (3%) padaresponden perempuan, empat orang (2%) pada
+                responden laki-laki, tiga orang (2%) di kalangan responden di Manggarai, dan lima orang (2%) pada
+                responden di Tanggamus.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 scrolly__chart">
+          <iframe scrolling="no" src="https://public.flourish.studio/story/1072910/embed#slide-0"></iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer id="footer">
+    <a class="next-page" href="page2.html">
+     <button>Next Page</button>
+    </a>
+  </footer>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("navbar");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+  <script src="./js/config.js"></script>
+  <script src="./js/map.js"></script>
+  <script src="./js/flourish.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
