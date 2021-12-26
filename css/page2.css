@@ -3,74 +3,112 @@ html {
   height: 100%;
 }
 
-.topnav {
+#navbar .topnav {
   background-color: rgb(255, 255, 255);
+  width: 100%;
   overflow: hidden;
+  position: fixed;
+  z-index: 40;
+}
+
+#navbar .topnav-right {
+  float: right;
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
+#navbar button {
+  display: inline-block;
+  border: none;
   float: left;
+  background-color: rgb(255, 255, 255);
   color: #000000;
-  font-family: Roboto Condensed;
+  font-family: Roboto;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
   font-size: 17px;
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+#navbar .topnav button:hover {
   background-color: rgb(187, 187, 187);
-  color: black;
+  /* color: black; */
 }
 
 /* Add a color to the active/current link */
-.topnav a.active {
+#navbar .topnav button.active {
   background-color: #e20a16;
-  color: white;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+#navbar button.icon {
+  display: none;
 }
 
-/* Right-aligned section inside the top navigation */
-.topnav-right {
-  float: right;
+@media screen and (max-width: 600px) {
+  #navbar .topnav-right {
+    float: left;
+  }
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  #navbar button.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+  }
 }
 
-/* The hero image */
-
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive button.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    text-decoration: none;
+    float: none;
+    display: block;
+    text-align: justify;
+  }
+}
 
 /* Place text in the middle of the image */
 .hero-text {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto", serif;
+  font-size: 3vw;
+  font-weight: 600;
   text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: rgb(0, 0, 0);
 }
-
 .light-box {
   font-size: 5vw;
-  font-family: 'Merriweather', serif;
+  font-family: 'Roboto', serif;
   font-weight: 600;
   text-align: center;
   height: 200px;
 }
 
 .light-box .paragraf {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  text-align: left;
+  text-align: justify;
   font-size: 25px;
   max-width: 800px;
   margin: 1em auto 1em auto;
 }
 
 .light-box .paragraf-top {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  text-align: left;
+  text-align: justify;
   font-size: 25px;
   max-width: 800px;
   margin: 100px auto 1em auto;
@@ -81,46 +119,106 @@ html {
 }
 
 .paragraf-single {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  text-align: left;
+  text-align: justify;
   font-size: 25px;
   max-width: 800px;
   margin: 1em auto 100px auto;
 }
+/* paralax scroll */
+#scrollytelling {
+  /* 'position:relative' allows the scrollytelling section to be positioned in a custom way */
+  position: relative;
+  /* OPTIONAL: you can choose any background color */
+  background-color: white;
+  }
+  
+article {
+  position: relative;
+  padding: 0 1rem;
+  /* 'max-width' sets how wide each step's the text comes up on the screen */
+  max-width: 20rem;
+  /* 'OPTIONAL: margin-top' sets how much space there is between the the figure and the first message.*/
+  margin-top: 0;
+  /* 'margin-left:auto' and 'margin-right:auto' centers the article on the page.*/
+  margin-left: auto;
+  margin-right: auto;
+  /* 'transform' is included to ensure z-index works properly on all kinds of devices */
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  }
+  
+  figure {
+  /* 'sticky' is responsible for keeping the figure centered in the page as the user scrolls */
+  position: -webkit-sticky;
+  position: sticky;
+  /* 'left' is required for 'position:sticky' to function */
+  left: 0;
+  /* 'width:100%' and 'margin:0' forces the figure to take up the maximum space. This helps with image sizing and centering*/
+  width: 100%;
+  margin: 0;
+  /*OPTIONAL: Setting the min-height prevents the figure from becoming unreadable */
+  min-height: 480px;
+  /* 'transform' is included to ensure z-index works properly on all kinds of devices */
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  /* OPTIONAL: you can choose any background color */
+  background-color: white;
+  }
+  
+  figure img {
+  /* position:absolute allows us to place the images on top of one another, which allows for smooth transitioning*/
+  position:absolute;
+  left: 0px;
+  /* ease-out transition creates a smooth change for the image from completely see-through, to fully visible. */
+  -webkit-transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+  }
+  
+  .step {
+  /* 'position relative' allows the steps to positioned in a custom way*/
+  position: relative;
+  margin: 600px auto;
+  }
+  
+  .step.last-child {
+  /* OPTIONAL: removes extra space at the bottom of the story*/
+  margin-bottom: 0;
+  }
+  
+  .step p {
+    opacity: 1;
+  /* 'position relative' allows the steps to positioned in a custom way*/
+  position: relative;
+  /*OPTIONAL: centers the text*/
+  text-align: justify;
+  /*OPTIONAL: creates space around the text*/
+  padding: 1rem;
+  /*OPTIONAL: can be set based on preferences*/
+  font-family: 'Open Sans', sans-serif;
+  width: 600px;
+  color: #fff;
+  text-shadow: 1px 1px #6b6b6b;
+  font-size: 1.5vw;
+  font-weight: bold;
+  /*OPTIONAL: can be set based on preferences*/
+  /* background-color: #f3f3f3; */
+  /*OPTIONAL: creates a solid box around the text*/
+  /* border: 2px solid #282828; */
+  /*OPTIONAL: makes the text slightly see-through so that the figure is somewhat visible underneath*/
+  opacity: 0.95;
+  }
+  
+  /* stop paralax */
+
 
 .timeline-js {
   margin-top: 10px;
-}
-
-#footer {
-  padding: 0.75em 0em;
-  margin: 0px auto;
-  background-color: #ffffff;
-  width: 100%;
-  position: relative;
-  z-index: 0;
-}
-
-#footer .next-page {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 32px;
-  text-align: center;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-
-
-.step {
-  padding: 100px;
-  height: min-content;
-  width: 80%;
-  border-radius: 10px;
-  opacity: 0.75;
-  text-align: center;
-  background-color: rgb(255, 255, 255);
-  margin: 100px;
 }
 
 #text-paralax {
@@ -130,4 +228,23 @@ html {
   opacity: 1;
   text-align: center;
   margin: 100px;
+}
+
+
+#footer {
+  padding: 0.75em 0em;
+  background-color: #ffffff;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+#footer button {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  background-color: #ffffff;
 }

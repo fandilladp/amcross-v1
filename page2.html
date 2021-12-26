@@ -8,19 +8,21 @@
   <title>AMCROSS</title>
   <style>
     .hero-image {
-      /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-          rgba(0, 0, 0, 0.5)),
-        url("./images/header.jpg");
+      /* The image used */
+      background-image: url("images/header.jpg");
+
+      /* Add the blur effect */
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
 
       /* Set a specific height */
-      height: 50%;
+      height: 100vh;
 
-      /* Position and center the image to scale nicely on all screens */
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      position: relative;
     }
 
     #scrolly {
@@ -37,22 +39,39 @@
 </head>
 
 <body>
-  <nav>
-    <div class="topnav">
-      <div class="topnav-right">
-        <a href="index.html">Latar Belakang</a>
-        <a class="active" href="page2.html">Peningkatan Kapasitas</a>
-        <a href="page3.html">Harapan Kedepan</a>
+  <header>
+    <nav id="navbar">
+      <div class="topnav">
+        <div class="topnav-right">
+          <a href="index.html">
+            <button>
+              Latar Belakang
+            </button>
+          </a>
+          <a href="page2.html"><button class="active">
+              Peningkatan Kapasitas
+            </button></a>
+          <a href="page3.html">
+            <button>
+              Harapan Kedepan
+            </button></a>
+          <button onclick="myFunction()" class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
       </div>
-    </div>
-  </nav>
-  <div class="hero-image">
+    </nav>
+    <div class="hero-image"></div>
     <div class="hero-text">
-      <h1>HERO IMAGE</h1>
+      <h2>Peningkatan Kapasitas
+      </h2>
     </div>
-  </div>
+  </header>
   <div class="light-box">
-    <h5>Peningkatan kapasitas komunitas </br>dan sekolah</h5>
+    <h5>Peningkatan kapasitas komunitas </br> dan sekolah</h5>
   </div>
 
   <div class="light-box">
@@ -64,35 +83,78 @@
       turut menunda pelaksanaan kegiatan dilapangan.</p>
   </div>
   <!-- start paralax -->
-  <section id="scrolly">
-    <div class="step">
-      <p id="text-paralax">Peningkatan kapasitas di masyarakat sedikit berjalan dengan dibentuknya sibat di beberapa
-        komunitas sasaran</p>
-    </div>
-    <div class="step">
-      <p id="text-paralax">Tantangan yang cukup sigifikan dirasakan adalaha adanya pandemi ini. Antisipasi yang
-        dilakukan dengan melakuan
-        realokasi budget dan perubahan aktivitas.
-        Aktivitas yang nyata terlihat adalah dengan perubahan kegiatan yang berfokus pada respon Covid-19.</p>
-    </div>
-    <div class="step">
-      <p id="text-paralax">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum recusandae nulla quidem voluptatum accusantium
-        voluptates sed atque et animi illo, pariatur mollitia quod facere expedita dolor harum, dolorem odit repellat.
-      </p>
-    </div>
-  </section>
-  <!-- <div id="test">
-      <div class="paralax-text">
-        <p>  Peningkatan kapasitas di masyarakat sedikit berjalan dengan dibentuknya sibat di beberapa komunitas sasaran.</p>
-      </div>
-      <div class="paralax-text">
-        Tantangan yang cukup sigifikan dirasakan adalaha adanya pandemi ini. Antisipasi yang dilakukan dengan melakuan
-        realokasi budget dan perubahan aktivitas.
-        Aktivitas yang nyata terlihat adalah dengan perubahan kegiatan yang berfokus pada respon Covid-19.
-      </div>
-    </div> -->
+  <section id="scrollytelling">
+    <!-- BG Sticky -->
+    <figure style="height: 912px; top: 0px;">
 
+      <!-- This div just helps to center the images -->
+      <div style="text-align:center; height:100%; width:100%; overflow:hidden">
+        <!-- Individual Images -->
+        <img src="images/sekolah01.jpg" alt="Map1" width="100%" id="imgV1" style="opacity: 0; top: -10.6755px;">
+        <img src="images/sekolah02.jpg" alt="Map2" width="100%" id="imgV2" style="opacity: 0; top: -10.6755px;">
+        <img src="images/sekolah03.jpg" alt="Map3" width="100%" id="imgV3" style="opacity: 0; top: -10.6755px;">
+        <img src="images/sekolah04.jpg" alt="Map4" width="100%" id="imgV4" style="opacity: 0; top: -10.6755px;">
+        <img src="images/01.jpg" alt="Map5" width="100%" id="imgV5" style="opacity: 0; top: -10.6755px;">
+        <img src="images/02.jpg" alt="Map6" width="100%" id="imgV6" style="opacity: 0; top: -10.6755px;">
+        <img src="images/03.jpg" alt="Map7" width="100%" id="imgV7" style="opacity: 1; top: -10.6755px;">
+        <img src="images/04.jpg" alt="Map8" width="100%" id="imgV8" style="opacity: 1; top: -10.6755px;">
+      </div>
+    </figure>
+
+    <!-- Prose about the album. Each div is a  point about the different versions of the figure -->
+    <article>
+
+      <!-- Message #1 -->
+      <div class="step" data-scrollama-index="0">
+        <p>The World Happiness Report uses the Gallup World Poll, where respondents are asked to evaluate the quality of
+          their lives on an ladder scale running
+          from 0 to 10, with the bottom rung of the ladder (0) being the worst possible life for them and 10 being the
+          best possible.<br><br>In darker blue countries, happiness is increasing quickly. Darker red countries have
+          rapidly falling happiness. Grey countries show approximately steady happiness levels.</p>
+      </div>
+
+      <!-- Message #2 -->
+      <div class="step" data-scrollama-index="1">
+        <p>Africa seems to be home to some of the extremes.<br><br> The nations where happiness is increasing most
+          quickly, and unfortunately several nations where happiness is losing the most ground, are located in Africa.
+        </p>
+      </div>
+
+      <!-- Message #3 -->
+      <div class="step" data-scrollama-index="2">
+        <p>Generally speaking, West Africa and Southern Africa show a stark contrast in the direction national happiness
+          is moving.</p>
+      </div>
+
+      <!-- Message #4 -->
+      <div class="step" data-scrollama-index="3">
+        <p>Rwanda, Tanzania, Malawi, Zambia, Zimbabwe, and Botswana show some of the most unfavorable trends in
+          happiness among the world's nations.<br><br>These Southern African countries show between -1.5% and -2.5%
+          change in happiness per year.</p>
+      </div>
+
+      <!-- Message #5 -->
+      <div class="step" data-scrollama-index="4">
+        <p>However, some West African countries are leading the world in improving happiness.<br><br>Among this block of
+          11 neighboring nations, all show a rapid rise in happiness.</p>
+      </div>
+
+      <!-- Message #6 -->
+      <div class="step" data-scrollama-index="5">
+        <p>Within this group of nations, Congo (Brazzaville), Togo, and Benin show gains in happiness of more than 2%
+          per year.</p>
+      </div>
+
+      <!-- Message #7 -->
+      <div class="step is-active" data-scrollama-index="6">
+        <p>In fact, Togo and Benin show the fastest increases in national happiness in the entire world, averaging 3.4%
+          and 3.2% per year respectively.<br><br>According to the World Happiness Report, Benin was ranked
+          second-to-last (155th) in the world in 2012. In 2020 Benin ranked ahead of China by 7 spots, at 86th.</p>
+      </div>
+
+    </article>
+
+  </section>
   <!-- stop paralax -->
   <div class="light-box">
     <h5>Peningkatan kapasitas Institusi (PMI)</h5>
@@ -131,16 +193,28 @@
   </div>
   <footer id="footer">
     <a class="next-page" href="page3.html">
-      <p>Next Page</p>
+      <button>Next Page</button>
     </a>
   </footer>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("navbar");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
   <link
     href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap"
     rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
   <script src="https://unpkg.com/intersection-observer"></script>
   <script src="./js/scrollama.min.js"></script>
-  <script src="./js/sideScrolama.js"></script>
+  <!-- <script src="./js/sideScrolama.js"></script> -->
+  <script src="./js/scrolly.js"></script>
 </body>
 
 </html>

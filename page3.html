@@ -14,38 +14,54 @@
       background-image: linear-gradient(rgba(0, 0, 0, 0.5),
           rgba(0, 0, 0, 0.5)),
         url("./images/header.jpg");
+        filter: blur(8px);
+      -webkit-filter: blur(8px);
 
       /* Set a specific height */
-      height: 50%;
+      height: 100vh;
 
-      /* Position and center the image to scale nicely on all screens */
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      position: relative;
     }
   </style>
   <link rel="stylesheet" href="./css/page3.css">
 </head>
 
 <body>
-  <nav>
-    <div class="topnav">
-      <div class="topnav-right">
-        <a href="index.html">Latar Belakang</a>
-        <a href="page2.html">Peningkatan Kapasitas</a>
-        <a class="active" href="page3.html">Harapan Kedepan</a>
+  <header>
+    <nav id="navbar">
+      <div class="topnav">
+        <div class="topnav-right">
+          <a href="index.html">
+            <button>
+              Latar Belakang
+            </button>
+          </a>
+          <a href="page2.html"><button>
+              Peningkatan Kapasitas
+            </button></a>
+          <a href="page3.html">
+            <button class="active">
+              Harapan Kedepan
+            </button></a>
+          <button onclick="myFunction()" class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
       </div>
-    </div>
-  </nav>
-  <div class="hero-image">
+    </nav>
+    <div class="hero-image"></div>
     <div class="hero-text">
-      <h1>HERO IMAGE</h1>
+      <h2>Peningkatan Kapasitas
+      </h2>
     </div>
-  </div>
-  <div class="light-box">
-    <h1>Harapan Kedepan</h1>
-  </div>
+  </header>
   <div class="paragraf">
     <p>
       Program yang masih berjalan ini masih bisa terus berjalan dengan segala
@@ -68,25 +84,13 @@
   </div>
   <div class="footer-basic">
     <footer>
-      <div class="social">
-        <a href="https://www.instagram.com/digitalanalogboy/"><i class="icon ion-social-instagram"></i></a><a
-          href="https://www.instagram.com/digitalanalogboy/"><i class="icon ion-social-snapchat"></i></a><a
-          href="https://twitter.com/hilmanarioaji"><i class="icon ion-social-twitter"></i></a><a
-          href="https://twitter.com/hilmanarioaji"><i class="icon ion-social-facebook"></i></a>
-      </div>
-      <ul class="list-inline">
-        <li class="list-inline-item"><a href="#">Home</a></li>
-        <li class="list-inline-item"><a href="#">Services</a></li>
-        <li class="list-inline-item"><a href="#">About</a></li>
-        <li class="list-inline-item"><a href="#">Terms</a></li>
-        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-      </ul>
       <p class="copyright">MOHONIZIN © 2021</p>
     </footer>
   </div>
   <link
     href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap"
     rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
